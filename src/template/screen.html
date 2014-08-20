@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title><%=title%></title>
+    <link href="<%=rooturl%>/css/screen.css" rel="stylesheet">
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    IE や Opera では正常に表示できません。<br/>
+    Chrome や FireFox などのブラウザを使用してください。
+</div>
+
+<div id="impress">
+<%=content%>
+<div id="copyright" class="step slide" style="padding-top:600px" data-x="0" data-y="0">
+『<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Grunt ハンズオン</span>』 by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/ototadana/grunt-handson" property="cc:attributionName" rel="cc:attributionURL">Ototadana</a> は<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>で提供されています。
+</div>
+</div>
+
+<script src="<%=rooturl%>/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
