@@ -146,16 +146,6 @@ npm install karma-coverage --save-dev
 npm install grunt-karma --save-dev
 ```
 
-*   注意: 
-    >   2014/7 時点の最新版である QUnit 1.14.0 では、
-    >   <https://github.com/jquery/qunit/issues/350> により、
-    >   正常に動作しません。  
-    >   1.14.1 以降では正常動作するようになるはずですが、
-    >   一足先に試してみたい場合は、
-    >   <http://code.jquery.com/qunit/qunit-git.js> を
-    >   ダウンロードして、 `node_modules/qunitjs/qunit/qunit.js`
-    >   を置き換えることで動作確認が可能です。
-
 ### 2. Gruntfile.js を作る
 
 ```javascript
