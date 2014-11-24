@@ -10,7 +10,7 @@ Gruntハンズオン(テスト編)
 *   [E. Mocha でテストを行う](#e-mocha-)
 *   [F. Mocha で JUnit レポートを出力する](#f-mocha-junit-)
 *   [G. Mocha でカバレッジレポートを出力する](#g-mocha-)
-*   [H. WebdriverJS で E2E テストを行う](#h-webdriverjs-e2e-)
+*   [H. WebdriverIO で E2E テストを行う](#h-webdriverio-e2e-)
 *   [Z. 参考資料](#z-)
 
 
@@ -703,11 +703,11 @@ grunt mochaTest
 
 
 
-H. WebdriverJSでE2Eテストを行う
+H. WebdriverIOでE2Eテストを行う
 -------------------------------
 [grunt-webdriver](https://github.com/webdriverio/grunt-webdriver) を利用すると、
 [Mocha](http://visionmedia.github.io/mocha/) と 
-[WebdriverJS](http://webdriver.io/) を用いたテストを行うことができます。
+[WebdriverIO](http://webdriver.io/) を用いたテストを行うことができます。
 
 1.  インストール
 2.  Gruntfile.js の記述
@@ -754,12 +754,12 @@ module.exports = function(grunt) {
 ```bash
 var assert = require('assert');
 
-describe('grunt-webdriverjs test', function () {
+describe('grunt-webdriver test', function () {
   it('checks if title contains the search query', function(done) {
     browser
-      .url('http://github.com')
-      .setValue('#js-command-bar-field','grunt-webdriver')
-      .submitForm('.command-bar-form')
+      .url('https://github.com')
+      .setValue('form.js-site-search-form input[type="text"]','grunt-webdriver')
+      .submitForm('form.js-site-search-form')
       .getTitle(function(err,title) {
           assert(title.indexOf('grunt-webdriver') !== -1);
       })
@@ -768,7 +768,7 @@ describe('grunt-webdriverjs test', function () {
 });
 ```
 
-*   [GitHub](http://github.com) にアクセスし、
+*   [GitHub](https://github.com) にアクセスし、
     'grunt-webdriver' で検索して一覧取得する、
     という動作を行う
 
