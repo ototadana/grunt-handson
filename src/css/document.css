@@ -1,49 +1,49 @@
 body {
-    font-family:'Lucida Grande', Meiryo, sans-serif;
+  font-family:'Lucida Grande', Meiryo, sans-serif;
 }
 
 div.row {
-	padding:10px;
+  padding:10px;
 }
 
 h1 {
-	color:#888888;
-	font-size:42px;
-	font-weight:bold;
+  color:#888888;
+  font-size:42px;
+  font-weight:bold;
 }
 
 h2 {
-	border-top: 1px solid lightgray;
-	padding-top: 6px;
-	padding-left: 4px;
-	margin-top: 40px;
+  border-top: 1px solid lightgray;
+  padding-top: 6px;
+  padding-left: 4px;
+  margin-top: 40px;
 }
 
 h3, h4 {
-	border-left: 6px solid #f0f0f0;
-	border-top: 2px solid #f0f0f0;
-	padding-top: 4px;
+  border-left: 6px solid #f0f0f0;
+  border-top: 2px solid #f0f0f0;
+  padding-top: 4px;
 }
 
 h3, h4, p {
-	padding-left: 6px;
+  padding-left: 6px;
 }
 
 blockquote {
-	font-size: 12px;
-	margin-left: 40px;
+  font-size: 12px;
+  margin-left: 40px;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .navbar-brand a, a h2 {
-	color: #777;
+  color: #777;
 }
 
 .navbar-brand a:hover, a:hover h2 {
-	color: black;
+  color: black;
 }
 
 
