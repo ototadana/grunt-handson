@@ -732,7 +732,7 @@ module.exports = function(grunt) {
         desiredCapabilities: {
           browserName: 'chrome'
         },
-        reporter: 'XUnit',
+        reporter: 'xunit',
         output: 'test-results.xml'
       },
       test: {
